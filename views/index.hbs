@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>
+  {{# if errors }}
+      <ul>
+        {{# each errors }}
+          <li><a href="#{{this.param}}"> {{ this.msg }}</a></li>
+        {{/each}}
+      </ul>
+  {{/if}}
+</p>
+
+<p>
+<form method="post">
+  <input type="radio" name="validateMe" value="email" id="emailLabel"/> <label for="emailLabel">Email:</label> <input type="text" name="email" id="email"/><br /><br />
+  <input type="radio" name="validateMe" value="date" id="date"/>
+  <label for="date">Date:</label><input type="text" name="day" id="day" /><input type="text" name="month" id="month"/><input type="text" name="year" id="year" /><br /><br />
+  <input type="submit">
+</form>
+</p>

@@ -1,0 +1,4 @@
+.idea/
+express-validator-example.iml
+node_modules/
+npm-debug.log
